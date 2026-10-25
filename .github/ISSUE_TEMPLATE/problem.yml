@@ -1,0 +1,41 @@
+name: Report an issue with a problem
+description: A practice problem, its tests, or its statement looks wrong
+title: Problem report
+labels: [problem]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The app fills in the problem id. Add what looks wrong. Leave your solution out unless you want it public.
+  - type: input
+    id: problem_id
+    attributes:
+      label: Problem id
+      description: For example two-sum
+    validations:
+      required: true
+  - type: input
+    id: pattern
+    attributes:
+      label: Pattern
+      description: For example arrays-hashing
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where
+      options:
+        - Web app
+        - Mac app
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 0.1.0-alpha.1
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What is wrong with this problem
+    validations:
+      required: true
