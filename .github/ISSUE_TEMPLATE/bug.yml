@@ -18,6 +18,12 @@ body:
     validations:
       required: true
   - type: input
+    id: github_login
+    attributes:
+      label: GitHub login
+      description: Filled in by the app when you are signed in. This repository is public.
+      placeholder: octocat
+  - type: input
     id: version
     attributes:
       label: Version
